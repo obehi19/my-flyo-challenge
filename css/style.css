@@ -1,0 +1,214 @@
+*, 
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: sans-serif;
+    font-variant: 400;
+    font-size: 14px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background:hsl(218, 28%, 13%);
+    color: #fff;
+}
+h2,
+h3,
+nav,
+.btn{
+    font-weight: 700;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+h2{
+    font-size: 48px;
+}
+#nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 73px 80px;
+    background:hsl(217, 28%, 15%);
+}
+#nav .nav-btn{
+    display: flex;
+    list-style-type: none;
+    
+}
+.nav-btn :not(:last-child){
+    padding-right: 56px;
+}
+
+#showcase{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 3rem;
+    text-align:center;
+    background-color: hsl(217, 28%, 15%), url("/images/bg-curvy-desktop.svg") bottom no-repeat;
+    background: 100% 278px;
+    
+}
+#showcase img{
+    width: 739;
+    height: 533;
+    
+}
+#showcase h1{
+    width: 742px;
+    margin: 46px;
+}
+#showcase p{
+    width: 742px;
+    font-size: 22px;
+    padding: 0 38px;
+}
+.btn{
+    width: 288px;
+    margin-top: 1rem;
+    padding: 28px 0;
+    background: linear-gradient(to right, cyan, blue);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    border:none;
+    }
+    #feature{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 94px 158px;
+        margin: 138px 0;
+        padding: 0 288px;
+        text-align: center;
+        
+    }
+    #feature h3{
+        margin: 25px 0 12px 0;
+      }
+
+      #features{
+        display: flex;
+        align-items:center;
+        padding: 0 100px;
+      }
+
+      .img-box{
+          height: 468px;
+          width: auto;
+          margin-right: 45px;
+      }
+      .text-box :not(:last-child){
+        margin-bottom: 25px;
+      }
+      .disc-link{
+        color: cyan;
+        border-bottom: 1px solid cyan;
+      }
+      .disc-link img{
+        vertical-align: middle;
+        margin-left: 3px;
+      }
+
+
+      .testimonials{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+        padding: 148px;
+      }
+      .testimonials{
+        background: hsl(219, 30%, 18%);
+        padding: 45px 40px;
+        border-radius: 5px;
+        position: relative;
+      }
+      .testimonials:first-child::before{
+        content: url(/images/bg-quotes.png);
+        position: absolute;
+        top: -35px;
+        left: -15px;
+        z-index: -1;
+      }
+      .testimonials p{
+        margin-bottom: 25px;
+      }
+      .profile{
+        display: flex;
+        
+      }
+      .profile img{
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .div h3{
+      font-size: 18px;
+      
+      }
+      .div p{
+        font-size: 8px;
+      }
+      .sign-up{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: hsl(217, 28%, 15%);
+        padding: 50px 74px 40px 74px;
+        border-radius: 5px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -155px;
+      }
+      .sign-up h2{
+      margin-bottom: 36px;
+      text-align: center;
+      }
+      
+      .sign-up p{
+        margin-bottom: 36px;
+        text-align: center;
+      }
+      
+      form{
+        display:flex;
+        align-content: center;
+      }
+      
+      input[type = "email"]{
+        width: 482px;
+        height: 58px;
+        padding: 20px 47px;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        margin-right: 20px;
+      }
+      input[type="submit"]{
+        color: #fff ;
+        margin: 0;
+      }
+
+      
+      footer{
+      background: hsl(216, 53%, 9%);
+      padding: 200px 80px 80px 100px;
+      display: grid;
+      grid-template-columns: 4fr 3fre 1fr 1fr 2fr;
+      grid-template-rows: auto;
+      column-gap: 70px;
+      grid-template-areas: 
+      "logo , , , ,";
+      }
